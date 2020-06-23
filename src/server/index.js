@@ -72,7 +72,7 @@ app.use(bodyParser.raw(parserLimits));
     res.status(500).send({ message: err.message || 'Something broke!' });
   });
 
-  app.listen(port,['192.168.123.108','localhost'], () => {
+  app.listen(port,() => {
     console.log('╔═══════════════════════════════════════════════════════════'.green.bold);
     console.log('║ Background Geolocation Server | port: %s, dyno: %s'.green.bold, port, dyno);
     console.log('╚═══════════════════════════════════════════════════════════'.green.bold);
