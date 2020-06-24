@@ -22,7 +22,7 @@
   "repository": "https://github.com/transistorsoft/background-geolocation-console",
   "betterScripts": {
     "dev": {
-      "command": "concurrently --kill-others \"cross-env BABEL_ENV=node node --inspect=9229 ./bin/server.js\" \"cross-env BABEL_ENV=webpack node ./bin/dev.js\"",
+      "command": "concurrently --kill-others \"BABEL_ENV=node node --inspect=9229 ./bin/server.js\" \"BABEL_ENV=webpack node ./bin/dev.js\"",
       "env": {
         "TZ": "UTC",
         "NODE_PATH": "./src/client/"
